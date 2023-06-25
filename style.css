@@ -1,0 +1,142 @@
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+    box-sizing: content-box;
+}
+
+body {
+    position: relative;
+    padding: 50px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.modal {
+    position: absolute;
+    z-index: 5;
+    width: 700px;
+    height: 500px;
+
+    background-color: #ffffff;
+    box-shadow: 10px 10px #000000;
+
+    border-radius: 20px;
+    border: none;
+
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.modal-campo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    height: 100%;
+} 
+
+
+.modal::backdrop {
+    background-color: rgba(0, 0, 0, 0.356);
+}
+
+#campo-historico {
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 5px 5px #a7a7a7;
+}
+
+main {
+    padding: 25px;
+    border-radius: 20px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 5px 5px #a7a7a7;
+}
+
+
+
+BUTTON {
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    background-color: violet;
+    font-weight: 900;
+    border-radius: 20px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 5px 5px rgba(0, 0, 0);
+}
+
+#resultado {
+    display: none;
+    gap: 20px;
+
+    margin-top: 50px;
+}
+
+#cor {
+    width: 250px;
+    height: 250px;
+    background-color: blueviolet;
+}
+
+#campo-contador, #campo-jogador {
+    display: none;
+    margin-top: 50px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 20px;
+    width: 90%;
+}
+
+.input label {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.input input {
+    width: 300px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #f8c0ea;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+#historico span {
+    font-weight: 900;
+}
+
+
+#historico li {
+    margin-top: 15px;
+}

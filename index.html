@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twister Online</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <dialog class="modal" id="modal-inicio">
+        <div class="modal-campo">
+            <div id="input-campo">
+                <div class="input">
+                    <label for="nome1">Nome Jogador 1:</label>
+                    <input type="text" id="nome1" placeholder="Ensira o nome do primeiro jogador">
+                </div>
+        
+                <div class="input">
+                    <label for="nome2">Nome Jogador 2:</label>
+                    <input type="text" id="nome2" placeholder="Ensira o nome do segundp jogador">
+                </div>
+    
+                <div class="input">
+                    <label for="limite">Limite de partida</label>
+                    <input type="number" id="limite">
+                </div>
+            </div>
+            <button onclick="iniciarJogo()">Jogar</button>
+        </div>
+    </dialog>
+
+    <dialog class="modal" id="modal-fim">
+        <div class="modal-campo">
+            <h1>PARABENS! O JOGO ACABOU!</h1>
+            <button onclick="window.location.reload()">Jogar novamente</button>
+        </div>
+    </dialog>
+    <main>
+        <h1>Twister Online</h1>
+        <button onclick="girarRoleta()">GIRAR ROLETA</button>
+        <div id="resultado">
+            <div id="campo-cor">
+                <h3>A cor é:</h3>
+                <div id="cor">
+
+                </div>
+            </div>
+            <div id="campo-posicao">
+                <h3>A posição é:</h3>
+                <img src="img/pe-direito.jpg" alt="" width="250px" height="250px" id='posicao'>
+            </div>
+        </div>
+        <h3 id="campo-contador">Rodada: <span id="contador"></span></h3>
+        <h3 id="campo-jogador">Jogador da rodada: <span id="jogador"></span></h3>
+    </main>
+
+    <section id="campo-historico">
+        <ul id="historico">
+            
+        </ul>
+    </section>
+</body>
+</html>
