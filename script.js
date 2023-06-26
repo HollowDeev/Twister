@@ -80,9 +80,10 @@ const girarRoleta = () => {
 
     rodada += 1
 
-    let rodadaMaxima = (parseInt(document.getElementById('limite').value) + 1)
+    let rodadaMaxima = document.getElementById('limite').value
 
     if(rodadaMaxima != 0) {
+        rodadaMaxima = parseInt(rodadaMaxima) + 1
         if(rodada == rodadaMaxima) {
             finalizarJogo()
         }
